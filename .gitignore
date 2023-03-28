@@ -4,3 +4,5 @@ node_modules/
 .vscode
 # ignore DS_store 
 .DS_Store
+# hide env file 
+.env 
