@@ -1,12 +1,16 @@
 const router = require('express').Router();
-const travellerRoutes = require('./travellerRoutes');
-const locationRoutes = require('./locationRoutes');
-const tripRoutes = require('./tripRoutes');
+// const { ProductTags, Categories, Product, Tag } = require('../../models');
+const tagRoutes = require('./tagRoutes');
+// const ProductTagsRoutes = require('./ProductTags');
+const productRoutes = require('./productRoutes');
+const categoriesRoutes = require('./categoriesRoutes');
 
-// routes used from mini-project 
-router.use('/travellers', travellerRoutes);
-router.use('/locations', locationRoutes);
-router.use('/trips', tripRoutes);
+// routes used for each API
+router.use('/categories', categoriesRoutes);
+router.use('/products', productRoutes);
+router.use('./productTags', ProductTags);
+router.use('/tag', tagRoutes);
+
 
 module.exports = router;
 
