@@ -8,7 +8,7 @@ const categoriesRoutes = require('./categoriesRoutes');
 // routes used for each API
 router.use('/categories', categoriesRoutes);
 router.use('/products', productRoutes);
-router.use('./productTags', ProductTags);
+//router.use('./productTags', ProductTags);
 router.use('/tag', tagRoutes);
 
 
