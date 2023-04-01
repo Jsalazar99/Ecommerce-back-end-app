@@ -40,8 +40,12 @@ The following instructions detail the application's GET routes to return all cat
 
 - In Insomnia, the user tests “DELETE Category by ID,” “CREATE Category,” and “UPDATE Category.
 
+### Video Tutorial
+[Video Tutorial Link](https://drive.google.com/file/d/1HVK8zfFm1fnf37L_0f-MC7OprTWj0nrk/view)
+
 
 You’ll need to use the [MySQL2](https://www.npmjs.com/package/mysql2) and [Sequelize](https://www.npmjs.com/package/sequelize) packages to connect your Express.js API to a MySQL database and the [dotenv](https://www.npmjs.com/package/dotenv) package to use environment variables to store sensitive data.
+
 
 Use the `schema.sql` file in the `db` folder to create your database with MySQL shell commands. Use environment variables to store sensitive data like your MySQL username, password, and database name.
 

@@ -38,6 +38,20 @@ router.post('/', async (req, res) => {
   }
 });
 
+// PUT 
+router.put('/:id', async (req, res) => {
+  try {
+    const tagData = await Tag.update(req.body, {
+      where: {
+        id: req.params.id
+      }
+    });
+    res.status(200).json(tagData);
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+
 // DELETE  
 router.delete('/:id', async (req, res) => {
   try {
