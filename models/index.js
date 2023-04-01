@@ -3,6 +3,7 @@ const Product = require("./Product");
 const ProductTags = require("./ProductTags");
 const Tag = require("./Tag");
 
+// Association models here
 Product.belongsTo(Category, {
     foreignKey: "category_id"
 });

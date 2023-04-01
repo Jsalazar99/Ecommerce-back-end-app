@@ -1,3 +1,0 @@
-USE ecommerce_db;
-
-

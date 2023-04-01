@@ -15,8 +15,6 @@ router.get('/', async (req, res) => {
 router.get('/:id', async (req, res) => {
   try {
     const tagData = await Tag.findByPk(req.params.id, {
-      // JOIN with travellers, using the Trip through table
-      //include: [{ model: Traveller, through: Trip, as: 'location_travellers' }]
     });
 
     if (!tagData) {
